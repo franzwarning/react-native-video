@@ -1,3 +1,6 @@
+## FORKED FOR THE FOLLOWING REASONS
+- ClassCastException when casting metadata to id3frames (for icecast streams for example)
+
 ## react-native-video
 
 A `<Video>` component for react-native, as seen in
