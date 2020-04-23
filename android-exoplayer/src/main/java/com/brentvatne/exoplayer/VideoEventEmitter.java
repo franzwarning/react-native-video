@@ -244,7 +244,13 @@ class VideoEventEmitter {
         for (int i = 0; i < metadata.length(); i++) {
 
 
-            Id3Frame frame = (Id3Frame) metadata.get(i);
+            Id3Frame frame = null;
+
+            try {
+                frame = (Id3Frame) metadata.get(i);
+            } catch (ClassCastException exception) {
+                return;
+            }
 
             String value = "";
 
